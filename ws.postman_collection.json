@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "63600a22-a9a8-409f-a39e-fea8cc686758",
+		"name": "ws",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/cards?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cards"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cards/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "card_text",
+							"value": "dfladlad",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cards/{card_id}/like",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/cards/1/like",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cards",
+						"1",
+						"like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cards/{card_id}/edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "card_text",
+							"value": "ykjytnjfe",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/cards/1/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cards",
+						"1",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cards/{card_id}/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/cards/1/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cards",
+						"1",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
