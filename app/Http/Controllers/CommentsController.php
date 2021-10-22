@@ -22,7 +22,7 @@ class CommentsController extends Controller
 
         $comment = new Comment();
         $comment->card_id = $card_id;
-        $comment->card_text = $comment_text;
+        $comment->comment_text = $comment_text;
         $comment->save();
 
         return response()->json($comment, 200);
