@@ -26,3 +26,5 @@ $router->post('cards/{card_id}/edit', 'CardsController@edit');
 $router->post('cards/{card_id}/like', 'CardsController@like');
 
 $router->delete('cards/{card_id}/delete', 'CardsController@delete');
+
+$router->post('cards/{card_id}/comment/add', 'CommentsController@add');

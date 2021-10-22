@@ -48,7 +48,7 @@ class CardsController extends Controller
         $card->card_likes = $card['card_likes'] + 1;
         $card->save();
 
-        return response('Succesfull card liked.', 200)->json($card);
+        return response('Succesfull card liked.', 200);
     }
 
     public function delete($card_id) {
